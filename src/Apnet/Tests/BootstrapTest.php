@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Test jquery
+ * Test bootstrap
  *
  * @author Andrey F. Mindubaev <covex.mobile@gmail.com>
  * @license http://opensource.org/licenses/MIT  MIT License
@@ -11,7 +11,7 @@ namespace Apnet\Tests;
 use Apnet\FunctionalTestBundle\Framework\WebTestCase;
 
 /**
- * Test jquery
+ * Test bootstrap
  */
 class BootstrapTest extends WebTestCase
 {
