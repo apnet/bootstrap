@@ -6,8 +6,8 @@ php:
    - 5.5
 
 env:
-#   global:
-#      - secure: ""
+   global:
+      - secure: "Alx64zOOxuE+ilARb7eXrx9KOAidntEnZpofCbgTjAYtO2pR9pG6A4N4snBhEna3XZsNSGbA7aVly8HAEezuOqN3BS0mr0LZ3ZT9gx0G/79pWjyzvel5jHjDLQZL/ci07L/3JTGje0rqFSK2CzsV1Ltz6nrdQh590hM6nJMMjB4="
    matrix:
       - SYMFONY_VERSION=2.3.*
       - SYMFONY_VERSION=2.4.*
@@ -17,7 +17,7 @@ before_script:
    - gem install compass -v 0.12.2
    - gem install bootstrap-sass -v 3.1.1
    - composer self-update
-#   - sh -c "if $TRAVIS_SECURE_ENV_VARS; then composer config --global github-oauth.github.com $GITHUB_OAUTH_TOKEN; fi"
+   - sh -c "if $TRAVIS_SECURE_ENV_VARS; then composer config --global github-oauth.github.com $GITHUB_OAUTH_TOKEN; fi"
    - composer require --dev symfony/symfony:${SYMFONY_VERSION}
 
 script:
