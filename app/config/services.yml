@@ -5,6 +5,14 @@ services:
         tags:
             - { name: twig.extension }
 
+    apnet.assetic.importer.jquery:
+        parent: assetic.importer_path
+        arguments:
+            - %kernel.root_dir%/../vendor/apnet/jquery/app/Resources/assets/dist
+            - jquery
+        tags:
+            - { name: apnet.assetic.config_mapper }
+
     apnet.assetic.importer.bootstrap_css:
         parent: assetic.importer_compass
         arguments:
