@@ -1,6 +1,6 @@
 {
-    "name" : "covex-nn/symfony-bundle-skel",
-    "description" : "Symfony2 Bundle Skel",
+    "name" : "apnet/bootstrap",
+    "description" : "Bootstrap for AsseticImporter",
     "type" : "symfony-bundle",
     "license" : "MIT",
     "authors" : [
