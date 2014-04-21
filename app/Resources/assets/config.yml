@@ -1,0 +1,13 @@
+assets:
+    bootstrap:
+        inputs:
+            - @bootstrap
+        options:
+            output: javascripts/bootstrap.js
+    bootstrap_min:
+        inputs:
+            - @bootstrap
+        filters:
+            - yui_js
+        options:
+            output: javascripts/bootstrap.min.js

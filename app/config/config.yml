@@ -1,5 +1,6 @@
 imports:
 #    - { resource: parameters.yml }
+    - { resource: importer.yml }
     - { resource: services.yml }
 
 monolog:
@@ -33,6 +34,9 @@ twig:
 # Assetic Configuration
 assetic:
     use_controller: %kernel.debug%
+    filters:
+        yui_js:
+            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
 
 apnet_assetic_watcher:
     compiler_root: %kernel.root_dir%/Resources

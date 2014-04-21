@@ -13,10 +13,18 @@ services:
         tags:
             - { name: apnet.assetic.config_mapper }
 
-    apnet.assetic.importer.bootstrap_css:
+    apnet.importer.bootstrap_css:
         parent: assetic.importer_compass
         arguments:
             - %kernel.root_dir%/Resources/assets/config.rb
             - bootstrap
         tags:
             - { name: apnet.assetic.config_mapper, watcher: compass }
+
+    apnet.importer.bootstrap_js:
+        parent: assetic.importer_bootstrap_js
+        arguments:
+            - %kernel.root_dir%/Resources/assets/config.yml
+            - bootstrap
+        tags:
+            - { name: apnet.assetic.config_mapper, watcher: bootstrap_js }

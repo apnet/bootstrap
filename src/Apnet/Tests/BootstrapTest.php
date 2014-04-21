@@ -70,6 +70,14 @@ class BootstrapTest extends WebTestCase
         "/assets/stylesheets/bootstrap.min.css",
         "/bootstrap/stylesheets/bootstrap.min.css"
       ),
+      array(
+        "/assets/javascripts/bootstrap.js",
+        "/bootstrap/javascripts/bootstrap.js"
+      ),
+      array(
+        "/assets/javascripts/bootstrap.min.js",
+        "/bootstrap/javascripts/bootstrap.min.js"
+      ),
     );
   }
 }

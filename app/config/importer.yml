@@ -1,0 +1,26 @@
+parameters:
+    apnet.assetic.importer.bootstrap_js.class: Apnet\Dev\Factory\Importer\BootstrapImporter
+    apnet.assetic.source_watcher.bootstrap_js.class: Apnet\Dev\Factory\Watcher\BootstrapWatcher
+
+services:
+    apnet.assetic.importer.bootstrap_js:
+        class: %apnet.assetic.importer.bootstrap_js.class%
+        arguments:
+            - @apnet.assetic.importer_parser.pre
+
+    assetic.importer_bootstrap_js:
+        class: %apnet.assetic.asset_mapper.class%
+        factory_service: apnet.assetic.importer.bootstrap_js
+        factory_method: load
+        public: false
+        abstract: true
+
+    apnet.assetic.source_watcher.bootstrap_js:
+        class: %apnet.assetic.source_watcher.bootstrap_js.class%
+        arguments:
+            - @apnet.assetic.importer_parser.pre
+            - @assetic.filter_manager
+        calls:
+            - [ setImporter, [ @apnet.assetic.importer.bootstrap_js ] ]
+        tags:
+            - { name: apnet.assetic.source_watcher }
