@@ -29,3 +29,11 @@ twig:
     strict_variables: %kernel.debug%
     globals:
         readme_md: %kernel.root_dir%/../README.md
+
+# Assetic Configuration
+assetic:
+    use_controller: %kernel.debug%
+
+apnet_assetic_watcher:
+    compiler_root: %kernel.root_dir%/Resources
+    enabled: true

@@ -4,3 +4,11 @@ services:
         class: Apnet\Dev\TwigExtension
         tags:
             - { name: twig.extension }
+
+    apnet.assetic.importer.bootstrap_css:
+        parent: assetic.importer_compass
+        arguments:
+            - %kernel.root_dir%/Resources/assets/config.rb
+            - bootstrap
+        tags:
+            - { name: apnet.assetic.config_mapper, watcher: compass }
