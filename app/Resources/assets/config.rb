@@ -10,3 +10,5 @@ images_dir = "images"
 
 relative_assets = true
 line_comments = false
+
+output_style = :compressed
