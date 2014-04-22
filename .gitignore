@@ -5,6 +5,7 @@ app/logs
 bin
 composer.lock
 composer.phar
+Gemfile.lock
 phpunit.xml
 vendor
 phpunit.phar
