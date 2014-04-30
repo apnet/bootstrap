@@ -21,15 +21,15 @@ class BootstrapImporter extends PreImporter
   /**
    * {@inheritdoc}
    */
-  protected function _loadConfig($configPath)
+  protected function loadConfig($configPath)
   {
-    $config = parent::_loadConfig($configPath);
+    $config = parent::loadConfig($configPath);
 
     foreach ($config as $key => $formulae) {
       if (isset($formulae["inputs"]) && $formulae["inputs"] == array("@bootstrap")) {
         $count = substr_count($configPath, "/");
         $parent = ".." . str_repeat("/..", $count - 2);
-        $inputs = $this->_getBootstrapSassJavascripts();
+        $inputs = $this->getBootstrapSassJavascripts();
         foreach ($inputs as $num => $value) {
           $inputs[$num] = $parent . $value;
         }
@@ -48,7 +48,7 @@ class BootstrapImporter extends PreImporter
    * @throws WatcherCompileException
    * @return array
    */
-  protected function _getBootstrapSassJavascripts()
+  protected function getBootstrapSassJavascripts()
   {
     $process = new Process("gem which bootstrap-sass");
     $process->run();
@@ -82,9 +82,8 @@ class BootstrapImporter extends PreImporter
    *
    * @return array
    */
-  public function loadConfig($configPath)
+  public function loadPublicConfig($configPath)
   {
-    return $this->_loadConfig($configPath);
+    return $this->loadConfig($configPath);
   }
-
 }

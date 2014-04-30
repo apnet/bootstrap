@@ -21,3 +21,4 @@ before_script:
 script:
    - bin/phpunit
    - bin/phpcs --standard=vendor/apnet/coding-standard/src/Apnet src
+   - bin/phpcs --standard=vendor/apnet/coding-standard/src/Apnet app/src

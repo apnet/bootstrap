@@ -20,7 +20,7 @@ class BootstrapWatcher extends PreWatcher
   /**
    * @var BootstrapImporter
    */
-  private $_importer;
+  private $importer;
 
   /**
    * Set importer
@@ -31,7 +31,7 @@ class BootstrapWatcher extends PreWatcher
    */
   public function setImporter(BootstrapImporter $importer)
   {
-    $this->_importer = $importer;
+    $this->importer = $importer;
   }
 
   /**
@@ -45,9 +45,8 @@ class BootstrapWatcher extends PreWatcher
   /**
    * {@inheritdoc}
    */
-  protected function _loadConfig($configPath)
+  protected function loadConfig($configPath)
   {
-    return $this->_importer->loadConfig($configPath);
+    return $this->importer->loadPublicConfig($configPath);
   }
-
 }

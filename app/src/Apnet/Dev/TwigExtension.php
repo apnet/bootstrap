@@ -22,5 +22,4 @@ class TwigExtension extends \Twig_Extension
       new \Twig_SimpleFunction('file_get_contents', 'file_get_contents'),
     );
   }
-
 }
