@@ -10,8 +10,7 @@ services:
 
     assetic.importer_bootstrap_js:
         class: %apnet.assetic.asset_mapper.class%
-        factory_service: apnet.assetic.importer.bootstrap_js
-        factory_method: load
+        factory: [ "@apnet.assetic.importer.bootstrap_js", load ]
         public: false
         abstract: true
 

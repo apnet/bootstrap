@@ -4,53 +4,52 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "382d0bf22113946d07333ecf02855349",
+    "hash": "8244f748e35d276306287c194c21c2e1",
     "packages": [
         {
             "name": "apnet/assetic-importer-bundle",
-            "version": "1.2.1",
+            "version": "1.3.0-BETA2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apnet/AsseticImporterBundle.git",
-                "reference": "7d8c03bc6a6ac1e803edc102e551c8c06d6e5232"
+                "reference": "6e848e6beaf5ba5ccb1f5a9fc1a80729a134c340"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apnet/AsseticImporterBundle/zipball/7d8c03bc6a6ac1e803edc102e551c8c06d6e5232",
-                "reference": "7d8c03bc6a6ac1e803edc102e551c8c06d6e5232",
+                "url": "https://api.github.com/repos/apnet/AsseticImporterBundle/zipball/6e848e6beaf5ba5ccb1f5a9fc1a80729a134c340",
+                "reference": "6e848e6beaf5ba5ccb1f5a9fc1a80729a134c340",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "~1.0",
                 "php": ">=5.3.0",
-                "symfony/assetic-bundle": "~2.3",
-                "symfony/config": "~2.3",
-                "symfony/dependency-injection": "~2.3",
-                "symfony/filesystem": "~2.3",
-                "symfony/finder": "~2.3",
-                "symfony/http-kernel": "~2.3",
-                "symfony/process": "~2.3",
-                "symfony/twig-bundle": "~2.3",
-                "symfony/yaml": "~2.3",
+                "symfony/assetic-bundle": "~2.6",
+                "symfony/config": "~2.6",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/filesystem": "~2.6",
+                "symfony/finder": "~2.6",
+                "symfony/http-kernel": "~2.6",
+                "symfony/process": "~2.6",
+                "symfony/twig-bundle": "~2.6",
+                "symfony/yaml": "~2.6",
                 "twig/twig": "~1.12"
             },
             "require-dev": {
-                "apnet/coding-standard": "~1.5",
+                "apnet/coding-standard": "~2.0",
                 "apnet/functional-test-bundle": "~1.1,>=1.1.4",
                 "covex-nn/twig-callable-bridge-bundle": "~1.0",
                 "knplabs/knp-markdown-bundle": "~1.3",
                 "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5",
-                "symfony/monolog-bundle": "~2.3",
-                "symfony/symfony": "~2.3"
+                "symfony/monolog-bundle": "~2.6",
+                "symfony/symfony": "~2.6"
             },
             "suggest": {
-                "symfony/event-dispatcher": "~2.3"
+                "symfony/event-dispatcher": "~2.6"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -65,8 +64,7 @@
             "authors": [
                 {
                     "name": "Andrey F. Mindubaev",
-                    "email": "covex.mobile@gmail.com",
-                    "role": "Developer"
+                    "email": "covex.mobile@gmail.com"
                 }
             ],
             "description": "Integrates resource projects into Symfony2",
@@ -77,7 +75,7 @@
                 "sass",
                 "scss"
             ],
-            "time": "2014-05-21 11:43:16"
+            "time": "2015-04-19 09:14:47"
         },
         {
             "name": "doctrine/annotations",
@@ -656,25 +654,26 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.6.6",
+            "version": "v2.7.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "48c9e835a877adfb023b8b6d033d9dd14f342b4b"
+                "reference": "07379d1d80594872bfbb7e9baad2cf7709c73102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/48c9e835a877adfb023b8b6d033d9dd14f342b4b",
-                "reference": "48c9e835a877adfb023b8b6d033d9dd14f342b4b",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/07379d1d80594872bfbb7e9baad2cf7709c73102",
+                "reference": "07379d1d80594872bfbb7e9baad2cf7709c73102",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.3",
-                "php": ">=5.3.3",
+                "php": ">=5.3.9",
                 "psr/log": "~1.0",
-                "twig/twig": "~1.12,>=1.12.3"
+                "twig/twig": "~1.18"
             },
             "replace": {
+                "symfony/asset": "self.version",
                 "symfony/browser-kit": "self.version",
                 "symfony/class-loader": "self.version",
                 "symfony/config": "self.version",
@@ -698,7 +697,6 @@
                 "symfony/monolog-bridge": "self.version",
                 "symfony/options-resolver": "self.version",
                 "symfony/process": "self.version",
-                "symfony/propel1-bridge": "self.version",
                 "symfony/property-access": "self.version",
                 "symfony/proxy-manager-bridge": "self.version",
                 "symfony/routing": "self.version",
@@ -730,17 +728,23 @@
                 "monolog/monolog": "~1.11",
                 "ocramius/proxy-manager": "~0.4|~1.0",
                 "propel/propel1": "~1.6",
-                "symfony/phpunit-bridge": "~2.7"
+                "symfony/phpunit-bridge": "self.version"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "Symfony\\": "src/"
+                    "Symfony\\Bridge\\Doctrine\\": "src/",
+                    "Symfony\\Bridge\\Monolog\\": "src/",
+                    "Symfony\\Bridge\\ProxyManager\\": "src/",
+                    "Symfony\\Bridge\\Swiftmailer\\": "src/",
+                    "Symfony\\Bridge\\Twig\\": "src/",
+                    "Symfony\\Bundle\\": "src/",
+                    "Symfony\\Component\\": "src/"
                 },
                 "classmap": [
                     "src/Symfony/Component/HttpFoundation/Resources/stubs",
@@ -769,24 +773,24 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-04-01 16:55:26"
+            "time": "2015-04-10 19:52:02"
         },
         {
             "name": "twig/twig",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf"
+                "reference": "9f70492f44398e276d1b81c1b43adfe6751c7b7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4cf7464348e7f9893a93f7096a90b73722be99cf",
-                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9f70492f44398e276d1b81c1b43adfe6751c7b7f",
+                "reference": "9f70492f44398e276d1b81c1b43adfe6751c7b7f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.4"
+                "php": ">=5.2.7"
             },
             "type": "library",
             "extra": {
@@ -826,7 +830,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-01-25 17:32:08"
+            "time": "2015-04-19 08:30:27"
         }
     ],
     "packages-dev": [
@@ -2703,7 +2707,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
