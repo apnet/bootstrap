@@ -19,8 +19,7 @@
         "apnet/jquery" : "~1.11,<2.0",
         "apnet/functional-test-bundle" : "~1.1,>=1.1.4",
         "phpunit/phpunit" : "~4.0",
-        "squizlabs/php_codesniffer" : "~1.5",
-        "apnet/coding-standard" : "~1.5",
+        "apnet/coding-standard" : "~2.0",
         "covex-nn/twig-callable-bridge-bundle" : "~1.0",
         "knplabs/knp-markdown-bundle" : "~1.3"
     },
