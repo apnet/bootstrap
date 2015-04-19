@@ -59,7 +59,7 @@ class BootstrapImporter extends PreImporter
     }
 
     $gemPath = trim($process->getOutput());
-    $bjsRootPath = dirname(dirname($gemPath)) . "/vendor/assets/javascripts";
+    $bjsRootPath = dirname(dirname($gemPath)) . "/assets/javascripts";
     $bjsPath = $bjsRootPath . "/bootstrap.js";
     $bjs = file_get_contents($bjsPath);
 

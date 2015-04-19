@@ -1,5 +1,4 @@
 source "https://rubygems.org"
 
-gem "sass", "= 3.2.9"
-gem "compass", "= 0.12.2"
-gem "bootstrap-sass", "= 3.1.1"
+gem "compass", "= 1.0.3"
+gem "bootstrap-sass", "= 3.3.4"
