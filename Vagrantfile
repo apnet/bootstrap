@@ -2,7 +2,7 @@ is_windows = (RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/)
 
 Vagrant.configure("2") do |config|
   config.vm.box = "covex/symfony-ubuntu1204-x64"
-  config.vm.box_version = ">= 2.1.2"
+  config.vm.box_version = ">= 2.2.1"
 
   config.vm.network :private_network, ip: "192.168.80.80"
   config.vm.hostname = "bootstrap.local"
