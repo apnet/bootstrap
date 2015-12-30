@@ -16,7 +16,7 @@
     "require-dev" : {
         "symfony/symfony" : "~2.6",
         "symfony/monolog-bundle" : "~2.6",
-        "apnet/jquery" : "~1.11,<2.0",
+        "apnet/jquery" : "~2.1",
         "apnet/functional-test-bundle" : "~1.1,>=1.1.4",
         "phpunit/phpunit" : "~4.0",
         "apnet/coding-standard" : "~2.0",
@@ -28,7 +28,6 @@
             "dev-master": "3.x-dev"
         }
     },
-    "minimum-stability" : "beta",
     "config" : {
         "bin-dir" : "bin"
     }
