@@ -6,7 +6,7 @@ services:
     apnet.assetic.importer.bootstrap_js:
         class: %apnet.assetic.importer.bootstrap_js.class%
         arguments:
-            - @apnet.assetic.importer_parser.pre
+            - "@apnet.assetic.importer_parser.pre"
 
     assetic.importer_bootstrap_js:
         class: %apnet.assetic.asset_mapper.class%
@@ -17,9 +17,9 @@ services:
     apnet.assetic.source_watcher.bootstrap_js:
         class: %apnet.assetic.source_watcher.bootstrap_js.class%
         arguments:
-            - @apnet.assetic.importer_parser.pre
-            - @assetic.filter_manager
+            - "@apnet.assetic.importer_parser.pre"
+            - "@assetic.filter_manager"
         calls:
-            - [ setImporter, [ @apnet.assetic.importer.bootstrap_js ] ]
+            - [ setImporter, [ "@apnet.assetic.importer.bootstrap_js" ] ]
         tags:
             - { name: apnet.assetic.source_watcher }

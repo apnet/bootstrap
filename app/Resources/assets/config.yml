@@ -1,12 +1,12 @@
 assets:
     bootstrap:
         inputs:
-            - @bootstrap
+            - "@bootstrap"
         options:
             output: javascripts/bootstrap.js
     bootstrap_min:
         inputs:
-            - @bootstrap
+            - "@bootstrap"
         filters:
             - yui_js
         options:
